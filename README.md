@@ -19,21 +19,21 @@ This repository contains various Python scripts and system service files for man
 ```
 git clone https://github.com/AZBrandCanada/THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR.git
 ```
-### 2. Add wordpress, getdpd telegram and SMTP keys to these files. 
+### 2. Add `wordpress`, `getdpd`, `telegram` and `SMTP` keys and `any website.ca entries in the files to your own website`  to these files. 
 ```
 nano app.py
 nano 2.3wordpress.py
 nano 11.getdpdlistsales.py
 nano monitor.py
 nano monitorservice.py
-nano satuscheck.py
+nano statuscheck.py
 ```
 ### 3. Navigate to the repository directory.
 ```
 cd THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR
 ```
 ### 4. Configure and enable the system services  
- using the provided service files below change the **`file locations`, `users`,`any website.ca entries in the files to your own website`  and `working directories`** to the proper ones.
+ using the provided service files below change the **`file locations`, `users` and `working directories`** to the proper ones.
  # Install System Service Files
 ### getdpd-service-monitor.service
 ```
