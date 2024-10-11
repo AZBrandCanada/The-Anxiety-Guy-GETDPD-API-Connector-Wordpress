@@ -16,7 +16,7 @@ https://github.com/AZBrandCanada/V1.7.19-Wordpress-Automatic-Email-Testing-With-
 - `monitorservice.py`: Monitors all services and sends alerts if any services go down.
 - `statuscheck.py`: Runs in crontab `0 4,10,22 * * * /usr/bin/python3 /home/user/The-Anxiety-Guy-GETDPD-Connector-Wordpress/statuscheck.py` and sends a Telegram status check at the specified times.
 - `processed_users.txt`: Keeps a list of all users that were added to WordPress to avoid re-adding them.
-- `verbosity.txt`: Looks for the word "verbosity" and sends the logs to Telegram when a sale is made.
+- `verbosity.txt`: this is a setting file for 2.3wordpress.py, to allow sending logs to telegram whenever a new user is created.
 
 ## Installation and Usage
 ### 1. Clone this repository.
