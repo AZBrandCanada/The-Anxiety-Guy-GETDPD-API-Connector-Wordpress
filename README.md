@@ -1,4 +1,4 @@
-This is Setup to work on Ubuntu 22.04. with Python 3*
+This is Setup to work on Ubuntu 22.04. with Python 3* it may work with other distros, but untested
 # GetDPD Project API Connector For The Anxiety Guy
 
 This repository contains various Python scripts and system service files for managing and monitoring GetDPD API transactions, WordPress user additions, and service health checks for high availability and alerts.
