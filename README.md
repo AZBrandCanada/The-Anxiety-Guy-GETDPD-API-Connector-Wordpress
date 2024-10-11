@@ -18,7 +18,7 @@ it creats a user after a customers buys and adds them to a role you make, you ne
 ## Installation and Usage
 ### 1. Clone this repository.
 ```
-git clone [https://github.com/AZBrandCanada/The-Anxiety-Guy-GETDPD-API-Connector-Wordpress.git](https://github.com/AZBrandCanada/The-Anxiety-Guy-GETDPD-API-Connector-Wordpress)
+git clone https://github.com/AZBrandCanada/The-Anxiety-Guy-GETDPD-API-Connector-Wordpress.git
 ```
 ### 2. Navigate to the repository directory.
 ```
