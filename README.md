@@ -33,7 +33,7 @@ nano satuscheck.py
 cd THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR
 ```
 ### 4. Configure and enable the system services  
- using the provided service files below change the **`file locations`, `users` and `working directories`** to the proper ones.
+ using the provided service files below change the **`file locations`, `users`,`any website.ca entries in the files to your own website`  and `working directories`** to the proper ones.
  # Install System Service Files
 ### getdpd-service-monitor.service
 ```
