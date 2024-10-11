@@ -18,11 +18,11 @@ it creats a user after a customers buys and adds them to a role you make, you ne
 ## Installation and Usage
 ### 1. Clone this repository.
 ```
-git clone https://github.com/AZBrandCanada/THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR.git
+git clone [https://github.com/AZBrandCanada/The-Anxiety-Guy-GETDPD-API-Connector-Wordpress.git](https://github.com/AZBrandCanada/The-Anxiety-Guy-GETDPD-API-Connector-Wordpress)
 ```
 ### 2. Navigate to the repository directory.
 ```
-cd THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR
+cd The-Anxiety-Guy-GETDPD-API-Connector-Wordpress
 ```
 ### 3. Add `wordpress`, `getdpd`, `telegram` and `SMTP` keys, `any website.ca entries in the files to your own website` and `the role for wordpres you choose to use`  to these files. 
 ```
@@ -54,7 +54,7 @@ sudo nano /etc/systemd/system/getdpd-service-monitor.service
 [Service]
 Type=simple
 User=user
-ExecStart=/usr/bin/python3 /home/user/The-Anxiety-Guy-GETDPD-Connector-Wordpress/monitorservice.py
+ExecStart=/usr/bin/python3 /home/user/The-Anxiety-Guy-GETDPD-API-Connector-Wordpress/monitorservice.py
 WorkingDirectory=/home/user/The-Anxiety-Guy-GETDPD-Connector-Wordpress
 Restart=on-failure
 ```
@@ -68,7 +68,7 @@ sudo nano /etc/systemd/system/getdpd.service
 [Service]
 Type=simple
 User=user
-ExecStart=/usr/bin/python3 /home/user/The-Anxiety-Guy-GETDPD-Connector-Wordpress/app.py
+ExecStart=/usr/bin/python3 /home/user/The-Anxiety-Guy-GETDPD-API-Connector-Wordpress/app.py
 WorkingDirectory=/home/user/The-Anxiety-Guy-GETDPD-Connector-Wordpress
 Restart=on-failure
 ```
@@ -82,8 +82,8 @@ sudo nano /etc/systemd/system/getdpdmonitor.service
 [Service]
 Type=simple
 User=user
-ExecStart=/usr/bin/python3 /home/userThe-Anxiety-Guy-GETDPD-Connector-Wordpress/monitor.py
-WorkingDirectory=/home/user/The-Anxiety-Guy-GETDPD-Connector-Wordpress
+ExecStart=/usr/bin/python3 /home/user/The-Anxiety-Guy-GETDPD-API-Connector-Wordpress/monitor.py
+WorkingDirectory=/home/user/The-Anxiety-Guy-GETDPD-API-Connector-Wordpress
 Restart=on-failure
 ```
 
@@ -101,7 +101,7 @@ After=network.target
 Type=simple
 User=user
 WorkingDirectory=/home/user/emailchecker
-ExecStart=/usr/bin/python3 /home/user/The-Anxiety-Guy-GETDPD-Connector-Wordpress/email_checker.py
+ExecStart=/usr/bin/python3 /home/user/The-Anxiety-Guy-GETDPD-API-Connector-Wordpress/email_checker.py
 Restart=on-failure
 
 [Install]
@@ -111,7 +111,7 @@ WantedBy=multi-user.target
 crontab -e 
 ```
 ```
-0 4,10,22 * * * /usr/bin/python3 /home/user/The-Anxiety-Guy-GETDPD-Connector-Wordpress/statuscheck.py
+0 4,10,22 * * * /usr/bin/python3 /home/user/The-Anxiety-Guy-GETDPD-API-Connector-Wordpress/statuscheck.py
 ```
 ### 6. Ensure all required Python dependencies are installed.
 
