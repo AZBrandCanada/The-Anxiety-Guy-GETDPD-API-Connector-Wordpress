@@ -36,7 +36,7 @@ git clone https://github.com/AZBrandCanada/THE-Anxiety-Guy-GETDPD-WORDPRESS-API-
 cd THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR
 ```
 ### 4. Configure and enable the system services  
- using the provided service files below change the file locations, users and working directories to the proper ones.
+ using the provided service files below change the **`file locations`, `users` and `working directories`** to the proper ones.
  # Install System Service Files
 ### getdpd-service-monitor.service
 ```
@@ -103,7 +103,7 @@ WantedBy=multi-user.target
 crontab -e 
 ```
 ```
-0 4,10,22 * * * /usr/bin/python3 /home/user/getdpd/statuscheck.pya
+0 4,10,22 * * * /usr/bin/python3 /home/user/getdpd/statuscheck.py
 ```
 ### 5. Ensure all required Python dependencies are installed.
 
