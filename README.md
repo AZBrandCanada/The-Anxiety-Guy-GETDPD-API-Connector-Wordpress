@@ -20,7 +20,11 @@ it creats a user after a customers buys and adds them to a role you make, you ne
 ```
 git clone https://github.com/AZBrandCanada/THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR.git
 ```
-### 2. Add `wordpress`, `getdpd`, `telegram` and `SMTP` keys, `any website.ca entries in the files to your own website` and `the role for wordpres you choose to use`  to these files. 
+### 2. Navigate to the repository directory.
+```
+cd THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR
+```
+### 3. Add `wordpress`, `getdpd`, `telegram` and `SMTP` keys, `any website.ca entries in the files to your own website` and `the role for wordpres you choose to use`  to these files. 
 ```
 nano app.py
 nano 2.3wordpress.py
@@ -29,11 +33,17 @@ nano monitor.py
 nano monitorservice.py
 nano statuscheck.py
 ```
-### 3. Navigate to the repository directory.
-```
-cd THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR
-```
-### 4. Configure and enable the system services  
+
+### 4. **Changing the Product to your Own Producs**
+it needs to be the exact product name `only change 'VIP - Inner Circle Anxiety Recovery Program'`
+
+   ```bash
+   nano 2.3wordpressdpd.py
+and edit this line 25
+ vip_entries = [json.loads(line) for line in lines if 'VIP - Inner Circle Anxiety Recovery Program' in json.loads(line).get('product_name', '')]
+
+   ```
+### 5. Configure and enable the system services  
  using the provided service files below change the **`file locations`, `users` and `working directories`** to the proper ones.
  # Install System Service Files
 ### getdpd-service-monitor.service
@@ -103,9 +113,9 @@ crontab -e
 ```
 0 4,10,22 * * * /usr/bin/python3 /home/user/The-Anxiety-Guy-GETDPD-Connector-Wordpress/statuscheck.py
 ```
-### 5. Ensure all required Python dependencies are installed.
+### 6. Ensure all required Python dependencies are installed.
 
-### 6. Run the programs and monitor services with.
+### 7. Run the programs and monitor services with.
    **Reload systemd manager configuration:**
    #### After copying the service files, reload the systemd configuration to recognize the new service files.
    ```bash
@@ -128,7 +138,7 @@ crontab -e
    sudo systemctl start emaillog.service
    ```
 
-### 7. **Check the status of the services:**
+### 8. **Check the status of the services:**
    Verify that each service is running correctly.
 
    ```bash
@@ -137,15 +147,7 @@ crontab -e
    sudo systemctl status getdpdmonitor.service
    sudo systemctl status emaillog.service
    ```
-### 8. **Changing the Product to your Own Producs**
-it needs to be the exact product name `only change 'VIP - Inner Circle Anxiety Recovery Program'`
 
-   ```bash
-   nano 2.3wordpressdpd.py
-and edit this line 25
- vip_entries = [json.loads(line) for line in lines if 'VIP - Inner Circle Anxiety Recovery Program' in json.loads(line).get('product_name', '')]
-
-   ```
 
 This will ensure that the services are correctly installed, enabled, and running on your system. If there are any issues, the status command will provide details to help diagnose and fix them.
 
