@@ -19,11 +19,23 @@ This repository contains various Python scripts and system service files for man
 ```
 git clone https://github.com/AZBrandCanada/THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR.git
 ```
-### 4. Navigate to the repository directory.
+### 2. Add wordpress, getdpd telegram and SMTP keys to these files. 
+```
+nano app.py
+nano 2.3wordpress.py
+nano 11.getdpdlistsales.py
+nano monitor.py
+nano monitorservice.py
+nano satuscheck.py
+```
+```
+git clone https://github.com/AZBrandCanada/THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR.git
+```
+### 3. Navigate to the repository directory.
 ```
 cd THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR
 ```
-### 5. Configure and enable the system services  [Install System Service Files Link](https://github.com/AZBrandCanada/THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR/blob/main/README.md#install-system-service-files)
+### 4. Configure and enable the system services  [Install System Service Files Link](https://github.com/AZBrandCanada/THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR/blob/main/README.md#install-system-service-files)
  using the provided service files below change the file locations, users and working directories to the proper ones.
 ```
 crontab -e 
@@ -31,9 +43,9 @@ crontab -e
 ```
 0 4,10,22 * * * /usr/bin/python3 /home/user/getdpd/statuscheck.pya
 ```
-### 7. Ensure all required Python dependencies are installed.
+### 5. Ensure all required Python dependencies are installed.
 
-### 8. Run the programs and monitor services with.
+### 6. Run the programs and monitor services with.
    **Reload systemd manager configuration:**
    #### After copying the service files, reload the systemd configuration to recognize the new service files.
    ```bash
@@ -57,7 +69,7 @@ crontab -e
    sudo systemctl start emaillog.service
    ```
 
-### 5. **Check the status of the services:**
+### 7. **Check the status of the services:**
    Verify that each service is running correctly.
 
    ```bash
