@@ -139,11 +139,10 @@ crontab -e
    ```
 
 This will ensure that the services are correctly installed, enabled, and running on your system. If there are any issues, the status command will provide details to help diagnose and fix them.
- ```  
-```
+
 
 ## Contributing
-
+AZBrand.ca
 
 ## License
 
