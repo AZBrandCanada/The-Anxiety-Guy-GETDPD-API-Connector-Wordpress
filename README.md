@@ -118,7 +118,6 @@ crontab -e
    sudo systemctl enable getdpdmonitor.service
    sudo systemctl enable emaillog.service
    ```
-    **Start the services:**
    #### Start each service to run them immediately.
 
    ```bash
