@@ -35,13 +35,12 @@ git clone https://github.com/AZBrandCanada/THE-Anxiety-Guy-GETDPD-WORDPRESS-API-
 ```
 cd THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR
 ```
-### 4. Configure and enable the system services  [Install System Service Files Link](https://github.com/AZBrandCanada/THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR/blob/main/README.md#install-system-service-files)
+### 4. Configure and enable the system services  
  using the provided service files below change the file locations, users and working directories to the proper ones.
  # Install System Service Files
-
 ### getdpd-service-monitor.service
 ```
-/etc/systemd/system/getdpd-service-monitor.service
+sudo nano /etc/systemd/system/getdpd-service-monitor.service
 ```
 ```
 [Service]
@@ -55,7 +54,7 @@ Restart=on-failure
 ### getdpd.service
 Service File Location
 ```
-/etc/systemd/system/getdpd.service
+sudo nano /etc/systemd/system/getdpd.service
 ```
 ```
 [Service]
@@ -69,7 +68,7 @@ Restart=on-failure
 ### getdpdmonitor.service
 Service File Location
 ```
-/etc/systemd/system/getdpdmonitor.service
+sudo nano /etc/systemd/system/getdpdmonitor.service
 ```
 ```
 [Service]
@@ -83,7 +82,7 @@ Restart=on-failure
 ### emaillog.service
 Service File Location
 ```
-/etc/systemd/system/emaillog.service
+sudo nano /etc/systemd/system/emaillog.service
 ```
 ```
 [Unit]
