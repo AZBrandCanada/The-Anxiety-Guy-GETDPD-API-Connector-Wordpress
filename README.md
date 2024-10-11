@@ -28,9 +28,6 @@ nano monitor.py
 nano monitorservice.py
 nano satuscheck.py
 ```
-```
-git clone https://github.com/AZBrandCanada/THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR.git
-```
 ### 3. Navigate to the repository directory.
 ```
 cd THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR
