@@ -5,7 +5,7 @@ This repository contains various Python scripts and system service files for man
 it creats a user after a customers buys and adds them to a role you make, you need to use a wordpress plugin to lock certain programs to a role. 
 
 #### this also works in conjunction monitoring email services, with this wordpress plugin 
-`https://github.com/AZBrandCanada/V1.7.19-Wordpress-Automatic-Email-Testing-With-Telegram-Alerts.git`
+https://github.com/AZBrandCanada/V1.7.19-Wordpress-Automatic-Email-Testing-With-Telegram-Alerts.git
 
 ## Contents
 
