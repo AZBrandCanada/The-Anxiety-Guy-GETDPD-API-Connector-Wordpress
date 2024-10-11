@@ -164,7 +164,7 @@ telegram_chat_id = ''
 
 #EMAIL START#########################################
 def send_email_with_gmail_smtp(to_email, username, password, product_name):
-    smtp_server = 'mail.theanxietyguy.com'
+    smtp_server = ''
     smtp_port = 465
     smtp_username = ''  # Replace with your email address
     smtp_password = ''  # Replace with your email password
