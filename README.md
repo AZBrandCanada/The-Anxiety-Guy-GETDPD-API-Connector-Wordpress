@@ -10,7 +10,7 @@ This repository contains various Python scripts and system service files for man
 - `11getdpdlistsales.py`: Connects to GetDPD's API and saves transactions to `transactions.txt`.
 - `monitor.py`: Checks the `timestamp.txt` file. If the file is older than 30 seconds, it sends alerts every 5 seconds to Telegram warning of an issue.
 - `monitorservice.py`: Monitors all services and sends alerts if any services go down.
-- `statuscheck.py`: Runs in crontab (`0 4,10,22 * * * /usr/bin/python3 /home/user/getdpd/statuscheck.py`) and sends a Telegram status check at the specified times.
+- `statuscheck.py`: Runs in crontab `0 4,10,22 * * * /usr/bin/python3 /home/user/The-Anxiety-Guy-GETDPD-Connector-Wordpress/statuscheck.py` and sends a Telegram status check at the specified times.
 - `processed_users.txt`: Keeps a list of all users that were added to WordPress to avoid re-adding them.
 - `verbosity.txt`: Looks for the word "verbosity" and sends the logs to Telegram when a sale is made.
 
@@ -43,8 +43,8 @@ sudo nano /etc/systemd/system/getdpd-service-monitor.service
 [Service]
 Type=simple
 User=user
-ExecStart=/usr/bin/python3 /home/user/getdpd/monitorservice.py
-WorkingDirectory=/home/user/getdpd
+ExecStart=/usr/bin/python3 /home/user/The-Anxiety-Guy-GETDPD-Connector-Wordpress/monitorservice.py
+WorkingDirectory=/home/user/The-Anxiety-Guy-GETDPD-Connector-Wordpress
 Restart=on-failure
 ```
 
@@ -57,8 +57,8 @@ sudo nano /etc/systemd/system/getdpd.service
 [Service]
 Type=simple
 User=user
-ExecStart=/usr/bin/python3 /home/user/getdpd/app.py
-WorkingDirectory=/home/user/getdpd
+ExecStart=/usr/bin/python3 /home/user/The-Anxiety-Guy-GETDPD-Connector-Wordpress/app.py
+WorkingDirectory=/home/user/The-Anxiety-Guy-GETDPD-Connector-Wordpress
 Restart=on-failure
 ```
 
@@ -71,8 +71,8 @@ sudo nano /etc/systemd/system/getdpdmonitor.service
 [Service]
 Type=simple
 User=user
-ExecStart=/usr/bin/python3 /home/user/getdpd/monitor.py
-WorkingDirectory=/home/user/getdpd
+ExecStart=/usr/bin/python3 /home/userThe-Anxiety-Guy-GETDPD-Connector-Wordpress/monitor.py
+WorkingDirectory=/home/user/The-Anxiety-Guy-GETDPD-Connector-Wordpress
 Restart=on-failure
 ```
 
@@ -90,7 +90,7 @@ After=network.target
 Type=simple
 User=user
 WorkingDirectory=/home/user/emailchecker
-ExecStart=/usr/bin/python3 /home/user/emailchecker/email_checker.py
+ExecStart=/usr/bin/python3 /home/user/The-Anxiety-Guy-GETDPD-Connector-Wordpress/email_checker.py
 Restart=on-failure
 
 [Install]
@@ -100,7 +100,7 @@ WantedBy=multi-user.target
 crontab -e 
 ```
 ```
-0 4,10,22 * * * /usr/bin/python3 /home/user/getdpd/statuscheck.py
+0 4,10,22 * * * /usr/bin/python3 /home/user/The-Anxiety-Guy-GETDPD-Connector-Wordpress/statuscheck.py
 ```
 ### 5. Ensure all required Python dependencies are installed.
 
