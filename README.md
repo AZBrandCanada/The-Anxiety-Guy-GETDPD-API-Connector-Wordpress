@@ -1,5 +1,5 @@
 This is Setup to work on Ubuntu 22.04. with Python 3* it may work with other distros, but untested
-# GetDPD Project API Connector For The Anxiety Guy
+# GetDPD API Integration tool For The Anxiety Guy
 
 This repository contains various Python scripts and system service files for managing and monitoring GetDPD API transactions, WordPress user additions, and service health checks for high availability and alerts.
 it creats a user after a customers buys and adds them to a role you make, you need to use a wordpress plugin to lock certain programs to a role. 
