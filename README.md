@@ -18,7 +18,7 @@ https://github.com/AZBrandCanada/V1.7.19-Wordpress-Automatic-Email-Testing-With-
 - `statuscheck.py`: Runs in crontab `0 4,10,22 * * * /usr/bin/python3 /home/user/The-Anxiety-Guy-GETDPD-Connector-Wordpress/statuscheck.py` and sends a Telegram status check at the specified times.
 - `processed_users.txt`: Keeps a list of all users that were added to WordPress to avoid re-adding them.
 - `verbosity.txt`: this is a setting file for 2.3wordpress.py, to allow sending logs to telegram whenever a new user is created.
-- `current_page.txt`: this is a setting file for 2.3wordpress.py, set it before running to the desired page you want to start indexing from the API. setting 1 will index all pages up to the current date.(not reccomended unless you are importing all old clients to a new backend and creating accounts for all of them. in which case rate limits should be introduced.)
+- `current_page.txt`: this is a setting file for 2.3wordpress.py, set it before running to the desired page you want to start indexing from the API. setting 1 will index all pages up to the current date.(not reccomended unless you are importing all old clients to a new backend and creating accounts for all of them. in which case rate limits should be introduced. if any pages are missing in the api, you will have manually increase the number in this file to the next page that isn't empty.)
 
 ## Installation and Usage
 ### 1. Clone this repository.
