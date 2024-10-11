@@ -136,6 +136,15 @@ crontab -e
    sudo systemctl status getdpdmonitor.service
    sudo systemctl status emaillog.service
    ```
+### 8. **Changing the Product to your Own Producs**
+it needs to be the exact product name `only change 'VIP - Inner Circle Anxiety Recovery Program'`
+
+   ```bash
+   nano 2.3wordpressdpd.py
+and edit this line 25
+ vip_entries = [json.loads(line) for line in lines if 'VIP - Inner Circle Anxiety Recovery Program' in json.loads(line).get('product_name', '')]
+
+   ```
 
 This will ensure that the services are correctly installed, enabled, and running on your system. If there are any issues, the status command will provide details to help diagnose and fix them.
 
