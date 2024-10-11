@@ -156,9 +156,22 @@ crontab -e
 
 This will ensure that the services are correctly installed, enabled, and running on your system. If there are any issues, the status command will provide details to help diagnose and fix them.
 
-
 ## Contributing
-AZBrand.ca
+
+We welcome contributions! Here’s how you can get started:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Make your changes.
+4. Commit your changes with a meaningful commit message.
+5. Push your changes to your forked repository.
+6. Open a pull request to the `main` branch of this repository.
+
+Please ensure that your code adheres to our coding standards and is well-documented. Thank you for your contributions!
+
+## Contact
+
+For any inquiries, issues, or suggestions, feel free to open an issue or contact us at https://AZbrand.ca
 
 ## License
 
