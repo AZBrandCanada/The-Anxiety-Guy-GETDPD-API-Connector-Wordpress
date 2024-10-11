@@ -20,7 +20,7 @@ it creats a user after a customers buys and adds them to a role you make, you ne
 ```
 git clone https://github.com/AZBrandCanada/THE-Anxiety-Guy-GETDPD-WORDPRESS-API-CONNECTOR.git
 ```
-### 2. Add `wordpress`, `getdpd`, `telegram` and `SMTP` keys and `any website.ca entries in the files to your own website`  to these files. 
+### 2. Add `wordpress`, `getdpd`, `telegram` and `SMTP` keys, `any website.ca entries in the files to your own website` and `the role for wordpres you choose to use`  to these files. 
 ```
 nano app.py
 nano 2.3wordpress.py
