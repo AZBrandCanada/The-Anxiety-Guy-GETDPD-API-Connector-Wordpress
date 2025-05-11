@@ -5,7 +5,7 @@ import time  # Import time module for sleep functionality
 
 # Telegram Bot credentials
 telegram_token = ''
-telegram_chat_id = '
+telegram_chat_id = ''
 
 # Log files and site URLs
 log_files = {
